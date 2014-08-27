@@ -306,9 +306,9 @@ namespace AccessAlarm
             //smtp порт
             int smtpPort = 587;
             //логин
-            string login = "nordimer";
+            string login = "/%write_your_login%/";
             //пароль
-            string pass = "Gfhjkmjnvskf5";
+            string pass = "/%write_your_pass%/";
 
             //создаем подключение
             SmtpClient client = new SmtpClient(smtpHost, smtpPort);
@@ -317,9 +317,9 @@ namespace AccessAlarm
             client.Credentials = new NetworkCredential(login, pass);
 
             //От кого письмо
-            string from = "nordimer@gmail.com";
+            string from = "/%write_your_mail%/";
             //Кому письмо
-            string to = "nordimer@gmail.com";
+            string to = "/%write_your_mail%/";
             //Тема письма
             string subject = "Несанкционированный доступ к Вашему компьютеру";
             //Текст письма
